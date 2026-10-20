@@ -1,0 +1,17 @@
+{
+  "build_name": "rockylinux-10",
+  "cd_files": "./packer/qemu/cloud-init/*",
+  "disk_image": "true",
+  "distribution_version": "10",
+  "distro_arch": "amd64",
+  "distro_name": "rockylinux",
+  "distro_version": "10",
+  "epel_rpm_gpg_key": "https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-10",
+  "guest_os_type": "centos10-64",
+  "iso_checksum": "https://dl.rockylinux.org/pub/rocky/10/images/x86_64/CHECKSUM",
+  "iso_checksum_type": "file",
+  "iso_url": "https://dl.rockylinux.org/pub/rocky/10/images/x86_64/Rocky-10-GenericCloud.latest.x86_64.qcow2",
+  "os_display_name": "RockyLinux 10",
+  "redhat_epel_rpm": "https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm",
+  "shutdown_command": "/sbin/halt -h -p"
+}
