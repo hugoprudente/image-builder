@@ -435,7 +435,7 @@ OPENSTACK_BUILD_NAMES		?=	openstack-ubuntu-2204 openstack-ubuntu-2404 openstack-
 
 OSC_BUILD_NAMES 			?=	osc-ubuntu-2204 osc-ubuntu-2404 osc-ubuntu-2604 osc-flatcar
 
-QEMU_BUILD_NAMES			?=	qemu-ubuntu-2204 qemu-ubuntu-2204-cloudimg qemu-ubuntu-2404 qemu-ubuntu-2404-cloudimg qemu-ubuntu-2404-immutable qemu-ubuntu-2404-efi qemu-ubuntu-2604 qemu-ubuntu-2604-efi qemu-ubuntu-2204-efi qemu-centos-9 qemu-centos-10 qemu-rhel-9 qemu-rockylinux-9 qemu-rockylinux-9-cloudimg qemu-flatcar
+QEMU_BUILD_NAMES			?=	qemu-ubuntu-2204 qemu-ubuntu-2204-cloudimg qemu-ubuntu-2404 qemu-ubuntu-2404-cloudimg qemu-ubuntu-2404-immutable qemu-ubuntu-2404-efi qemu-ubuntu-2604 qemu-ubuntu-2604-efi qemu-ubuntu-2204-efi qemu-centos-9 qemu-centos-10 qemu-rhel-9 qemu-rockylinux-9 qemu-rockylinux-9-cloudimg qemu-rockylinux-10 qemu-rockylinux-10-cloudimg qemu-flatcar
 
 QEMU_KUBEVIRT_BUILD_NAMES	:= $(addprefix kubevirt-,$(QEMU_BUILD_NAMES))
 
@@ -905,6 +905,8 @@ build-qemu-centos-10: ## Builds CentOS 10 Stream QEMU image
 build-qemu-rhel-9: ## Builds RHEL 9 QEMU image
 build-qemu-rockylinux-9: ## Builds Rocky 9 QEMU image
 build-qemu-rockylinux-9-cloudimg: ## Builds Rocky 9 QEMU image using cloud image
+build-qemu-rockylinux-10: ## Builds Rocky 10 QEMU image
+build-qemu-rockylinux-10-cloudimg: ## Builds Rocky 10 QEMU image using cloud image
 build-qemu-all: $(QEMU_BUILD_TARGETS) ## Builds all Qemu images
 
 build-maas-ubuntu-2204-efi: ## Builds Ubuntu 22.04 MaaS image that EFI boots
